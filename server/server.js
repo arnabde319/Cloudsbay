@@ -9,9 +9,9 @@ require('dotenv').config();
 
 //app
 const app = express();
-// process.env.DATABASE || 
+
 //db
-const dbUrl = 'mongodb://127.0.0.1:27017/ecom';
+const dbUrl = process.env.DATABASE || 'mongodb://127.0.0.1:27017/ecom';
 const main = async () => {
     await mongoose.connect(dbUrl);
 }
