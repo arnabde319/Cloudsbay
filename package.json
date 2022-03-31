@@ -1,0 +1,15 @@
+{
+  "name": "cloudsbay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./server/ && npm install && node server.js",
+    "heroku-postbuild": "cd ./client/ && npm install && npm run build",
+    "backend": "cd ./server && nodemon server.js",
+    "frontend": "cd ./client && npm run start",
+    "test": "cd ./client/ && npm run test"
+  },
+  "author": "Arnab",
+  "license": "ISC"
+}

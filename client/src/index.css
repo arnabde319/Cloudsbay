@@ -1,0 +1,11 @@
+svg { vertical-align: baseline; }
+
+.productImg img {
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
